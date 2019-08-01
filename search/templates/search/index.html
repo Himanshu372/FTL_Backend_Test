@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'search/content/site.css' %}">
+    <title>Title</title>
 </head>
 
+{% block content %}
 <body>
-    <p>Autocomplete Search</p>
+    <p class="app">Autocomplete Search</p>
     <form autocomplete="off" action="/action_page.php">
         <div class="autocomplete" style="width:300px;">
-            <input id="myInput" type="text" name="myCountry" placeholder="Search">
+            <script src="{% static 'search/script/autocomplete.js' %}">
+            </script>
+           <input type="input" name="action1" id="action1" title="Action 1" value="1"/>
         </div>
         <input type="submit">
     </form>
+
 </body>
+
+{% endblock %}
+
+
 
 </html>

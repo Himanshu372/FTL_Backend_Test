@@ -4,6 +4,7 @@ from django.db import models
 
 from django.db import models
 
+# Model for storing data from file
 class corpusData(models.Model):
     token = models.CharField(max_length = 100, null=False)
     token_count = models.CharField(max_length = 100, null=False)

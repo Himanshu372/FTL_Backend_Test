@@ -16,7 +16,6 @@ import posixpath
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -126,3 +125,9 @@ STATIC_URL = '/static/'
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 BACKGROUND_TASK_RUN_ASYNC = True
+
+
+STATICFILES_DIRS = [
+    '/Users/himanshusanjivjagtap/Desktop/FTL_App/search/static'
+]
+
